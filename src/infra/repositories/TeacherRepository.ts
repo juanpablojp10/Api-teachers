@@ -11,7 +11,7 @@ export class TeacherRepository implements ITeacherRepository {
 
     }
 
-    create(teacher: Teacher): Promise<Teacher> {
+    public create(teacher: Teacher): Promise<Teacher> {
         return this._prisma.teacher.create(
             {
                 data:teacher
